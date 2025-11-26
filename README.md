@@ -38,8 +38,14 @@ Finally, this machine code is loaded onto the processor, which can now execute t
 • Input/Output (I/O) operation**: Makes sure the app can interact with devices like the keyboard, mouse, or screen. Allocates memory: Gives space to the app to store and process data.
 Prepares instructions: Converts app code into assembly language, a lower-level language that the computer hardware can work with.
 3. What the Compiler Does After the OS processes the app, the compiler takes over. Its job is to: Convert the high-level code (C, C++, Java, etc.) into hardware-specific instructions. Makeing sure the program runs efficiently on the processor architecture. This is important because the same C code could work on different hardware, but the compiler ensures it is translated correctly for each one.
-4. What the Assembler Does Next comes the assembler, which **converts these instructions into binary code** - the Os and 1s that the hardware can understand. These binary instructions control the processor, memory, and other components. As of now our app exists only as electrical signals inside the computer.
-Let's look at this with an exampleof a **Stopwatch App** we write the code in C language. The app enters system software: The OS handles I/O and memory, and prepares the instructions. The compiler converts C into hardware instructions. The assembler converts instructions into binary. The binary instructions now run on the hardware, controlling the processor and displaying the stopwatch on your screen.
+4. What the Assembler Does Next comes the assembler, which **converts these instructions into binary code** 
+the Os and 1s that the hardware can understand. These binary instructions control the processor, memory, and other components. As of now our app exists only as electrical signals inside the computer.
+Let's look at this with an exampleof a **Stopwatch App** we write the code in C language. 
+The app enters system software: The OS handles I/O and memory, and prepares the instructions. 
+The compiler converts C into hardware instructions. The assembler converts instructions into binary. 
+The binary instructions now run on the hardware, controlling the processor and displaying the stopwatch on your screen.
+<img width="1243" height="681" alt="image" src="https://github.com/user-attachments/assets/a5341e74-3823-4ce0-bddf-415df1f3c188" />
+
 **Why is this called "architecture"?** These instructions form the big structure of the computer, guiding the hardware on how to execute the app.
 
 When we write a program and it finally reaches the hardware, there’s an important step in between called RTL — Register Transfer Level. It acts as the bridge between the instructions defined by the architecture (like RISC-V) and the actual physical circuits in the processor.
@@ -59,12 +65,15 @@ The output of the compiler usually contains pseudo instructions.
 These are:
 - Helper instructions for the programmer
 - But not understood by the CPU directly
+  <img width="1104" height="611" alt="image" src="https://github.com/user-attachments/assets/61341356-e6af-4ab1-8a34-d6ab2ee906f6" />
+
 
 **Base Integer Instructions (RV64I)**
 These are:
 - The real, fundamental instructions
 - Part of RV64I (RISC-V 64-bit Integer Base ISA)
 - Fully understood by the CPU
+<img width="1083" height="609" alt="image" src="https://github.com/user-attachments/assets/40faa998-309f-4eb5-8409-b51df4add98e" />
 
 **ABI (Application Binary Interface)**
 The ABI decides:
@@ -75,6 +84,7 @@ The ABI decides:
 - How the program talks to the OS and hardware
 The ABI ensures all programs, compilers, and hardware follow the same rules.
 after following the ABI rules, each RISC-V instruction is converted into a bit pattern.
+<img width="1121" height="739" alt="image" src="https://github.com/user-attachments/assets/58c5149a-a8f0-43f8-8ed5-fadec10f82d6" />
 
 **Word, Doubleword, MSB, LSB**
 In RISC-V:
