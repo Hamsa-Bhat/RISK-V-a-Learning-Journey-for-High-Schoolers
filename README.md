@@ -1,4 +1,4 @@
-# RISK-V-a-Learning-Journey-for-High-Schoolerss
+# RISK-V-a-Learning-Journey-for-High-Schoolers
 This repository explores how a C program transforms into hardware through RISC-V, ISA, RTL, and related concepts. We start from the basics and gradually dive deeper to understand every layer of the RISC-V ecosystem, from software instructions to actual processor execution.
 ## Introduction to RISC-V
 RISC-V RISC-V stands for Reduced Instruction Set Computer, it has small and simple instructions which makes hardware design easier to implement it is an Open source Instruction Set Architecutre (ISA) used for designing the computers.
