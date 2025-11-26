@@ -142,9 +142,22 @@ m(6)	Next byte
 m(7)	MSB
 
 *This ordering—LSB first → MSB last—is called little endian.*
-
 - **Middle Endian** 
 Middle endian is the reverse:
 - MSB at the lowest address
 - LSB at the highest address
 But this is not that iportant as this is not in RISC V 
+
+### How Doublewords Are Arranged in Memory
+Each doubleword is 8 bytes.
+So they must start at memory locations spaced 8 bytes apart.
+If the 1st doubleword starts at
+m(0)
+then the next ones are:
+Doubleword	Starting Address
+1st	m(0)
+2nd	m(8)
+3rd	m(16)
+4th	m(24)
+Since  each doubleword occupies 8 bytes.
+
