@@ -1,7 +1,23 @@
 # RISK-V-a-Learning-Journey-for-High-Schoolers
 This repository explores how a C program transforms into hardware through RISC-V, ISA, RTL, and related concepts. We start from the basics and gradually dive deeper to understand every layer of the RISC-V ecosystem, from software instructions to actual processor execution.
+
+## TABLE OF CONTENTS
+-  ## 📑 Table of Contents
+- Introduction to RISC-V
+- What is ISA?
+- C Program → Machine Execution Flow
+- System Software (OS/Compiler/Assembler)
+- RTL & Hardware Mapping
+- Pseudo vs Base Instructions
+- ABI (Application Binary Interface)
+- MSB, LSB, Words, Doublewords
+- Two’s Complement
+- Loading Values Into Registers
+- Little-Endian Memory Storage
 ## Introduction to RISC-V
-RISC-V RISC-V stands for Reduced Instruction Set Computer, it has small and simple instructions which makes hardware design easier to implement it is an Open source Instruction Set Architecutre (ISA) used for designing the computers.
+RISC-V stands for Reduced Instruction Set Computer.
+It provides small and simple instructions, which makes hardware easier to design and implement.
+It is also open-source, meaning anyone can build a processor based on it without paying license fees.
 ISA ISA as we previously saw stands for Instruction Set Architecture it defines the instructions the porcessor understands and how it manipulates the data. It is the language of the computer and they way we'll talk to the computer. ISA acts asa bridge between the software and the hardware and makes it easier to communicate between these two. It tells us -
 • What Instructions Exist
 • How to format them
@@ -157,6 +173,8 @@ Middle endian is the reverse:
 - MSB at the lowest address
 - LSB at the highest address
 But this is not that iportant as this is not in RISC V 
+
+<img width="1144" height="487" alt="image" src="https://github.com/user-attachments/assets/f191c4ec-3ac0-4646-bc25-fa6ca57e2bf2" />
 
 ### How Doublewords Are Arranged in Memory
 Each doubleword is 8 bytes.
